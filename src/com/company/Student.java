@@ -1,6 +1,6 @@
 package com.company;
 
-public class Student implements Comparable {
+public class Student implements Comparable<Student> {
 
     String name;
     String lastName;
@@ -60,12 +60,31 @@ public class Student implements Comparable {
         return pointsCount;
     }
 
+    public void addPoints(double points) {
+        this.pointsCount += points;
+    }
+
+    public void removePoints(double points) {
+        this.pointsCount -= points;
+    }
+
     public void setPointsCount(double pointsCount) {
         this.pointsCount = pointsCount;
     }
 
     @Override
-    public int compareTo(Object o) {
-        return 0;
+    public int compareTo(Student student) {
+        return this.lastName.compareTo(student.lastName);
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", studentState=" + studentState +
+                ", birthYear=" + birthYear +
+                ", pointsCount=" + pointsCount +
+                '}';
     }
 }
