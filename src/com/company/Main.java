@@ -42,19 +42,23 @@ public class Main {
 
         //search()
         System.out.println(studentClass.search("Lubik"));
+        System.out.println("");
 
         //searchPartial()
-        System.out.println(studentClass.search("Dan"));
+        System.out.println(studentClass.searchPartial("Dan"));
+        System.out.println("");
 
         //countByCondition()
-        studentClass.summary();
         System.out.println(studentClass.countByCondition(StudentCondition.DETACHING));
+        studentClass.summary();
 
         //sortByName()
         System.out.println(studentClass.sortByName());
+        System.out.println("");
 
         //sortByPoints()
         System.out.println(studentClass.sortByPoints());
+        System.out.println("");
 
         //addClass()
         classContainer.addClass("boje", 6);

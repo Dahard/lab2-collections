@@ -33,7 +33,8 @@ public class ClassContainer {
 
     public void summary() {
         System.out.println("Podsumowanie Kontenera Klasy: ");
-        classrooms.forEach((gn, c) -> System.out.println());
+        classrooms.forEach((key, classroom) -> System.out.println("Klasa: " + key + ", sklad: " + classroom));
+//        classrooms.forEach((gn, c) -> System.out.println());
         System.out.println("");
     }
 }
