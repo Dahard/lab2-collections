@@ -2,11 +2,11 @@ package com.company;
 
 public class Student implements Comparable<Student> {
 
-    String name;
-    String lastName;
-    StudentCondition studentState;
-    int birthYear;
-    double pointsCount;
+    private String name;
+    private String lastName;
+    private StudentCondition studentState;
+    private int birthYear;
+    private double pointsCount;
 
     public Student(String name, String lastName, StudentCondition studentState, int birthYear, double pointsCount) {
         this.name = name;

@@ -9,6 +9,10 @@ public class ClassContainer {
 
     private final Map<String, Class> classrooms;
 
+    public Map<String, Class> getClassrooms() {
+        return classrooms;
+    }
+
     public ClassContainer() {
         this.classrooms = new HashMap<>();
     }

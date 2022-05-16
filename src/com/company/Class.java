@@ -5,9 +5,17 @@ import java.util.stream.Collectors;
 
 public class Class {
 
-    String groupName;
-    List<Student> studentList;
-    int maxStudentCount;
+    private String groupName;
+    private List<Student> studentList;
+    private int maxStudentCount;
+
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public int getMaxStudentCount() {
+        return maxStudentCount;
+    }
 
     public Class(String groupName, int maxStudentCount) {
         this.groupName = groupName;
