@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 public class Class {
 
     private String groupName;
-    private List<Student> studentList;
     private int maxStudentCount;
+    private List<Student> studentList;
 
     public String getGroupName() {
         return groupName;
@@ -17,10 +17,25 @@ public class Class {
         return maxStudentCount;
     }
 
+    public Class(){
+    }
+
     public Class(String groupName, int maxStudentCount) {
         this.groupName = groupName;
         this.maxStudentCount = maxStudentCount;
         this.studentList = new ArrayList<>();
+    }
+
+    public void setStudentList(List<Student> studentList) {
+        this.studentList = studentList;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
+
+    public void setMaxStudentCount(int maxStudentCount) {
+        this.maxStudentCount = maxStudentCount;
     }
 
     public List<Student> getStudentList() {

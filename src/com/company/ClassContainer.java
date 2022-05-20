@@ -7,9 +7,9 @@ import java.util.Map;
 
 public class ClassContainer {
 
-    private final Map<String, Class> classrooms;
+    private final Map<Integer, Class> classrooms;
 
-    public Map<String, Class> getClassrooms() {
+    public Map<Integer, Class> getClassrooms() {
         return classrooms;
     }
 
@@ -17,8 +17,8 @@ public class ClassContainer {
         this.classrooms = new HashMap<>();
     }
 
-    public void addClass(String groupName, int maxStudentsCount) {
-        classrooms.put(groupName, new Class(groupName, maxStudentsCount));
+    public void addClass(Integer groupId, String groupName, int maxStudentsCount) {
+        classrooms.put(groupId, new Class(groupName, maxStudentsCount));
     }
 
     public void removeClass(String groupName) {

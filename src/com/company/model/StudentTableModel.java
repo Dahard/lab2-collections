@@ -6,10 +6,18 @@ import javax.swing.table.AbstractTableModel;
 
 public class StudentTableModel extends AbstractTableModel {
 
-    private final Class studentClass;
+    private Class studentClass;
 
     public StudentTableModel(Class studentClass) {
+        this.studentClass =  studentClass;
+    }
+
+    public void setStudentClass(Class studentClass) {
         this.studentClass = studentClass;
+    }
+
+    public Class getStudentClass() {
+        return studentClass;
     }
 
     @Override
